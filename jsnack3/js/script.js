@@ -10,10 +10,15 @@ un array e due numeri (“a” più piccolo di “b” e “b” grande al massi
 [2, 3, 4]
 
 */
+const firstArray = document.querySelector("#first-array");
+const outputArray = document.querySelector("#output");
 
 const numbers = [0, 1, 2, 3, 4, 5, 6];
 
-console.log(arrayCut(numbers, 2, 4));
+const finalArray = arrayCut(numbers, 2, 4);
+
+firstArray.innerHTML = numbers;
+outputArray.innerHTML = finalArray;
 
 
 
