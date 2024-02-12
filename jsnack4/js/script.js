@@ -10,20 +10,20 @@ const buttonSortEl = document.querySelector("#button-sort");
 
 buttonSortEl.addEventListener("click",
     function () {
-        // al click inverto la stringa inserita in input
+        // al click ordino alfabeticamente la stringa
         sortString(inputStringEl.value);
     })
 
 function sortString(string) {
-    // Trasformo la stringa in un array di caratteri
+    // trasformo la stringa in un array di caratteri
     let chars = string.split('');
 
-    // Ordino l'array di caratteri
+    // ordino l'array di caratteri
     chars.sort();
 
-    // Ricostruisco la stringa ordinata
+    // ricostruisco la stringa ordinata
     let sortedString = chars.join('');
 
-    // Mostro nel DOM la nuova stringa
+    // mostro nel DOM la nuova stringa
     outputStringEl.innerHTML = sortedString;
 }
